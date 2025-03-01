@@ -37,10 +37,12 @@
               >Dev<span class="font-semibold">Board</span></a
             >
           </div>
-          <a href="index.html" style="text-decoration: none; color: inherit;">
-          <div class="items-center">
-            <button id="back-btn" class="btn btn-primary text-white">Back To Desk</button>
-          </div>
+          <a href="index.html" style="text-decoration: none; color: inherit">
+            <div class="items-center">
+              <button id="back-btn" class="btn btn-primary text-white">
+                Back To Desk
+              </button>
+            </div>
           </a>
         </nav>
       </header>
@@ -52,8 +54,13 @@
           <p class="font-semibold">
             What are the different ways to select an element in the DOM?
           </p>
-          <p class="border-t border-dotted border-slate-400 pt-3">
-            we can select or catch a element from the dom using GetElementById, GetElementByTagName, GetElementsByClass, querySelector, querySelectorAll
+          <p class="border-t-2 border-dashed border-slate-300 pt-3">
+            We can select or catch a element from the dom using
+            <strong>
+              GetElementById("#id"), GetElementByTagName("p"),
+              GetElementsByClass("className"), querySelector(selectors),
+              querySelectorAll(".className")
+            </strong>
           </p>
         </div>
         <div
@@ -63,38 +70,40 @@
             What is the difference between innerHTML, innerText, and textContent
             ?
           </p>
-          <p class="border-t border-dotted border-slate-400 pt-3">
-            innerHTML Gets or sets the HTML markup inside an element. Returns total html including comments
+          <p class="border-t-2 border-dashed border-slate-300 pt-3">
+            The main differences are, we can get<br />
+            innerHTML: HTML markup (tags and text). <br />
+            innerText: Visible text (rendered). <br />
+            textContent: All text (raw), and change as we wish.
           </p>
         </div>
         <div
           class="question_answer flex flex-col gap-3 bg-white p-7 rounded-xl"
         >
           <p class="font-semibold">What is event delegation in the DOM?</p>
-          <p class="border-t border-dotted border-slate-400 pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            vitae velit culpa, nostrum quod omnis? Impedit sed quos dolorum
-            natus ut quis dignissimos. Vitae tenetur facere error voluptatum sit
-            neque omnis iste. Blanditiis reprehenderit aliquid pariatur impedit
-            et placeat, soluta nobis cupiditate fugit fugiat, quibusdam qui ex
-            culpa ad maxime doloribus. Reiciendis quis, adipisci, corrupti esse
-            exercitationem eius, sapiente perspiciatis quas ad aspernatur ipsum
-            laudantium at? Quas, sed suscipit. Unde?
+          <p class="border-t-2 border-dashed border-slate-300 pt-3">
+            We know that by default event bubble happens in our DOM. So we can
+            use this for our benefit. Suppose we want to add Event Listener on
+            every child node of a parent node, so instead of giving event
+            listener on every child node we can simply put it on parent node
+            thus it will save our storage and make our code faster.
           </p>
         </div>
         <div
           class="question_answer flex flex-col gap-3 bg-white p-7 rounded-xl"
         >
           <p class="font-semibold">What is event bubbling in the DOM?</p>
-          <p class="border-t border-dotted border-slate-400 pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            vitae velit culpa, nostrum quod omnis? Impedit sed quos dolorum
-            natus ut quis dignissimos. Vitae tenetur facere error voluptatum sit
-            neque omnis iste. Blanditiis reprehenderit aliquid pariatur impedit
-            et placeat, soluta nobis cupiditate fugit fugiat, quibusdam qui ex
-            culpa ad maxime doloribus. Reiciendis quis, adipisci, corrupti esse
-            exercitationem eius, sapiente perspiciatis quas ad aspernatur ipsum
-            laudantium at? Quas, sed suscipit. Unde?
+          <p class="border-t-2 border-dashed border-slate-300 pt-3">
+            Suppose someone says you I am in my bedroom, now by this we can say
+            that he is definately in his house also in his district also in his
+            country and obviously in the world, right? Event bubbling is similar
+            like this. Suppose in a HTML file there is a div inside another div
+            if we tap on the inner div then logically tapping the outer div and
+            also the body and the html and the document too. If there are
+            multiple event listener on these elements than those will also hit.
+            Some tme we need it and sometime we don't If we want to stop the
+            propagation. we can use <strong>stopPropagation()</strong> thus only
+            the targeted event will be triggered.
           </p>
         </div>
         <div
@@ -103,15 +112,16 @@
           <p class="font-semibold">
             How do you create, add, and remove elements using JavaScript?
           </p>
-          <p class="border-t border-dotted border-slate-400 pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
-            vitae velit culpa, nostrum quod omnis? Impedit sed quos dolorum
-            natus ut quis dignissimos. Vitae tenetur facere error voluptatum sit
-            neque omnis iste. Blanditiis reprehenderit aliquid pariatur impedit
-            et placeat, soluta nobis cupiditate fugit fugiat, quibusdam qui ex
-            culpa ad maxime doloribus. Reiciendis quis, adipisci, corrupti esse
-            exercitationem eius, sapiente perspiciatis quas ad aspernatur ipsum
-            laudantium at? Quas, sed suscipit. Unde?
+          <p class="border-t-2 border-dashed border-slate-300 pt-3">
+            We can create any element by <strong>.createElement("div")</strong
+            ><br />
+            We can append it using
+            <strong
+              >.appendChild(div) , .append() , .prepend(),
+              .insertBefore(newNode, referenceNode)</strong
+            >
+            <br />We can remove using
+            <strong>.removeChild(), element.remove()</strong> etc.
           </p>
         </div>
       </main>

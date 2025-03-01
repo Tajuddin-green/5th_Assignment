@@ -12,6 +12,7 @@ function cardWork(cardHeading, cardBtnId) {
     let completedTaskNumber = parseInt(
       document.getElementById("completed-task-number").innerText
     );
+
     completedTaskNumber += 1;
     document.getElementById("completed-task-number").innerText =
       completedTaskNumber;
