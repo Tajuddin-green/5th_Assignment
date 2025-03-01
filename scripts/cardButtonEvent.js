@@ -42,14 +42,14 @@ function cardWork(cardHeading, cardBtnId) {
 
     let div = document.createElement("div");
     div.innerHTML = `
-       <div class="bg-[#F4F7FF] p-3 rounded-lg mt-2 font-semibold">
+       <div class="bg-[#F4F7FF] p-3 rounded-lg mt-2 ">
 <p>You have Complete The Task ${cardHeadingText} at ${time}</p>
 </div>`;
 
     document.getElementById("activity-wall").appendChild(div);
   let childNumber =   document.getElementById("activity-wall").children.length
  if(childNumber === 6){
-    alert("")
+    alert("Congrates!!! You hav completed all the current task")
  }
   
   });
