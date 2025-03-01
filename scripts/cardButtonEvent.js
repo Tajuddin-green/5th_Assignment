@@ -1,20 +1,3 @@
-// document.getElementById("card-1-btn").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   alert("Board updated Successfully");
-//  let assignedNumber = parseInt(document.getElementById("assigned-number").innerText)
-//   console.log(assignedNumber);
-//   assignedNumber -= 1;
-//   document.getElementById("assigned-number").innerText = assignedNumber;
-
-//   let completedTaskNumber = parseInt(document.getElementById("completed-task-number").innerText)
-//   completedTaskNumber += 1;
-//   document.getElementById("completed-task-number").innerText = completedTaskNumber;
-//  const cardBtn =  document.getElementById("card-1-btn")
-//  cardBtn.classList.add("bg-slate-200")
-//  cardBtn.setAttribute("disabled", "true")
-
-// });
-
 function cardWork(cardHeading, cardBtnId) {
   document.getElementById(cardBtnId).addEventListener("click", (e) => {
     e.preventDefault();
@@ -47,11 +30,10 @@ function cardWork(cardHeading, cardBtnId) {
 </div>`;
 
     document.getElementById("activity-wall").appendChild(div);
-  let childNumber =   document.getElementById("activity-wall").children.length
- if(childNumber === 6){
-    alert("Congrates!!! You hav completed all the current task")
- }
-  
+    let childNumber = document.getElementById("activity-wall").children.length;
+    if (childNumber === 6) {
+      alert("Congrates!!! You hav completed all the current task");
+    }
   });
 }
 

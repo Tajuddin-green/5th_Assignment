@@ -19,10 +19,10 @@
         box-sizing: border-box;
         font-family: "Poppins", sans-serif;
       }
-  
+
     </style>
   </head>
-  <body class="bg-[#f4f7ff] h-[130vh]">
+  <body class="bg-red-600 h-[100%]">
     <section class="w-11/12 mx-auto pt-4">
       <header>
         <nav
@@ -43,7 +43,7 @@
               </div>
               <span id="completed-task-number" class="text-2xl font-semibold">23</span>
             </div>
-            <div
+            <div id="color-change-btn"
               class="items-center p-2 bg-[#F4F7FF] rounded-full cursor-pointer"
             >
               <img src="./assets/theme-btn.png" alt="" />
@@ -97,7 +97,7 @@
                 />
               </div>
               <div>
-                <p id="day" class="text-gray-500 text-lg">loading</p>
+                <p id="day" class="text-gray-500 text-lg">loading...</p>
                 <p id="date" class="text-2xl font-bold">Loading...</p>
               </div>
             </div>
@@ -115,8 +115,7 @@
                 Fix Mobile Button Issue
               </h2>
               <p class="text-sm text-gray-500 bg-white p-4 rounded-lg mb-4">
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works
+             The mobile has button issue, User said he faces difficulty when he tries to open the lock. It need to be finished ASAP.
               </p>
               <div
                 class="flex justify-between items-center border-t-2 border-dotted border-gray-200 pt-5"
@@ -188,7 +187,7 @@
               <h2 id="card-4-heading" class="text-lg font-semibold mt-5">Add new emoji 🤲</h2>
               <p class="text-sm text-gray-500 bg-white p-4 rounded-lg mb-4">
                 Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works
+                ensure onClick works properly and ensure onClick works. Added emoji🤲.
               </p>
               <div
                 class="flex justify-between items-center border-t-2 border-dotted border-gray-200 pt-5"
@@ -233,8 +232,7 @@
               >
               <h2 id="card-6-heading" class="text-lg font-semibold mt-5">Improve Job searching</h2>
               <p class="text-sm text-gray-500 bg-white p-4 rounded-lg mb-4">
-                Debug using Chrome DevTools, check for overlapping elements, and
-                ensure onClick works properly and ensure onClick works/p>
+              The job searching feature or filter has been successfully added, passed it's first checking stage. looking forward
               </p>
 
               <div
@@ -274,14 +272,14 @@
             </div>
           </div>
 
-          <div id="activity-wall" class="h-[100%] flex flex-col gap-2">
+          <div id="activity-wall" class="h-auto flex flex-col gap-2">
           
            </div>
           </div>
         </div>
       </main>
     </section>
-    <!-- <script>document.getElementsByTagName("body").style.backgroundColor = 'red'</script> -->
+    <script src="./scripts/bgChangeRandomly.js"></script>
     <script src="./scripts/updateDateTime.js"></script>
     <script src="./scripts/cardButtonEvent.js"></script>
     <script src="./scripts/activityWall.js"></script>
