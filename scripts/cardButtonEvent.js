@@ -36,6 +36,7 @@ function cardWork(cardHeading, cardBtnId) {
     const buttons = document.querySelectorAll(".card button");
     buttons.forEach((button) => {
       if (button.hasAttribute("disabled")) {
+        button.classList.remove("cursor-pointer")
         btnHasDis.push(button);
       }
     });
