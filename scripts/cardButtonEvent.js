@@ -31,9 +31,16 @@ function cardWork(cardHeading, cardBtnId) {
 </div>`;
 
     document.getElementById("activity-wall").appendChild(div);
-    let childNumber = document.getElementById("activity-wall").children.length;
-    if (childNumber === 6) {
-      alert("Congrates!!! You hav completed all the current task");
+
+    let btnHasDis = [];
+    const buttons = document.querySelectorAll(".card button");
+    buttons.forEach((button) => {
+      if (button.hasAttribute("disabled")) {
+        btnHasDis.push(button);
+      }
+    });
+    if (btnHasDis.length === 6) {
+      alert("Congrates!!! You have completed all the current task");
     }
   });
 }
